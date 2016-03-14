@@ -3,7 +3,6 @@
 import RPi.GPIO as GPIO
 from Adafruit_CharLCD import Adafruit_CharLCD
 from subprocess import *
-import time
 from time import sleep
 
 lcd = Adafruit_CharLCD()
