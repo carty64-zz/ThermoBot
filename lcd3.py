@@ -28,14 +28,14 @@ while n < 5:
   lcd.message('  %.1fF  %.1fC' % (round(temp_all[0], 1),round(temp_all[1], 1)))
   lcd.home()
   t = (round(temp_all[0], 1))
-  zone = "bedroom"
-#  print t
-#  print zone 
-#  print type(t)
-#  print type(zone)
-#  print len(t)
-#  print len(zone)
-  c.executemany('INSERT INTO temps (time, date, temp, zone) VALUES (time(),date(),%f,%s)' % (t, zone),)
+  zone = "bedroom",
+  print t
+  print zone
+  print type(t)
+  print type(zone)
+  print len(t)
+  print len(zone)
+  c.executemany('INSERT INTO temps (time, date, temp, zone) VALUES (time(),date(),:1,:2)', [t,zone,])
   sleep(5)
   n = n + 1
 
