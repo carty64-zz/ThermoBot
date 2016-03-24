@@ -8,3 +8,6 @@ Currently, the sensor is connected and can get the temperature in C, F, and K. I
 
 3/12/16 Update:
 I have added an LCD display that is displaying the date, time, and temp in F and C with live updates. I have also added an LED to the board, but I don't know when it should light up yet.
+
+3/23/16 Update:
+I finally got the sensor reading to store in the database. I need to determine the recording interval, though. Probably going to be 10 or 15 minutes. Every 15 would give 96 readings/day, every 10 would give 144.
